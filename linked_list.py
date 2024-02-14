@@ -1,5 +1,5 @@
 class LinkedList:
-    __count = None
+    __len = None
 
     class Item:
         value = None
@@ -13,14 +13,14 @@ class LinkedList:
     
 
     @property
-    def count(self):
+    def len(self):
         index = -1
         current = self.head
         while current:
             current = current.next
             index +=1
-        self.__count = index
-        return self.__count
+        self.__len = index
+        return self.__len
     
     def append_begin(self, value):
         item = LinkedList.Item(value)
