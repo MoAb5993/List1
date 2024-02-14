@@ -14,7 +14,7 @@ class LinkedList:
 
     @property
     def len(self):
-        index = -1
+        index = 0
         current = self.head
         while current:
             current = current.next
